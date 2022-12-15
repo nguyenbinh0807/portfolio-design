@@ -124,15 +124,22 @@ Annualised Volatility: 0.28
 allocation  9.35    19.65    21.0     20.0      30.0
 ```
 Notes:
-Maximum Sharpe Ratio Portfolio Allocation: Tối đa lợi nhuận.
-Minimum Volatility Portfolio Allocation: Giảm thiểu rủi ro.
-Annualised Return: Lợi nhuận.
-Annualised Volatility: Biến động
-allocation: tỷ trọng các cổ phiếu
+- Maximum Sharpe Ratio Portfolio Allocation: Tối đa lợi nhuận.
+- Minimum Volatility Portfolio Allocation: Giảm thiểu rủi ro.
+- Annualised Return: Lợi nhuận.
+- Annualised Volatility: Biến động
+- allocation: tỷ trọng các cổ phiếu
 
 <p align="center">
   <img src="images\profolios.png" width="90%">
 </p>
+
+## Returns
+Daily returns of stocks are often computed in different ways. *markowitzvn* provides three different ways of computing the daily returns in `markowitzvn.returns`:
+1. The cumulative return: <img src="https://raw.githubusercontent.com/fmilthaler/finquant/master/tex/738645698dc3073b4bb52a0c078ae829.svg?invert_in_darkmode&sanitize=true" align=middle width=194.52263655pt height=46.976899200000005pt/>
+2. Percentage change of daily returns: <img src="https://raw.githubusercontent.com/fmilthaler/finquant/master/tex/27215e5f36fd0308b51ab510444edf0d.svg?invert_in_darkmode&sanitize=true" align=middle width=126.07712039999997pt height=48.84266309999997pt/>
+3. Log Return: <img src="https://raw.githubusercontent.com/fmilthaler/finquant/master/tex/ef37c00ad58fe657a64041c3093e0640.svg?invert_in_darkmode&sanitize=true" align=middle width=208.3327686pt height=57.53473439999999pt/>
+
 ## Installation
 As it is common for open-source projects, there are several ways to get hold of the code. Choose whichever suits you and your purposes best.
 

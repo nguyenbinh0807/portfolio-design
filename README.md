@@ -10,13 +10,13 @@
  - [Contact Information](#Contact-Information)
 ## Motivation
 *markowitzvn* có thể tạo một đối tượng giữ giá cổ phiếu của danh mục đầu tư tài chính bạn mong muốn, phân tích nó và có thể tạo các biểu đồ gồm các loại *Returns*, *Moving Averages*, *Line Plot*. Nó cũng cho phép tối ưu hóa dựa trên *Efficient Frontier* hoặc danh mục đầu tư tài chính chạy *Monte Carlo* trong một vài dòng mã. Một số kết quả được hiển thị ở đây.
-Dựa trên lý thuyết tối đa hóa danh mục đầu tư của markowitz và những yêu cầu để phù hợp với thị trường Việt Nam nên tôi đã đưa mô hình về với Việt Nam giúp cho nhà đầu tư trong việc phân tích và phân bổ danh mục tối đa lợi nhuận và giảm thiểu rủi ro
+Dựa trên lý thuyết tối đa hóa danh mục đầu tư của markowitz và những yêu cầu để phù hợp với thị trường Việt Nam nên tôi đã đưa mô hình về với Việt Nam giúp cho nhà đầu tư trong việc phân tích và phân bổ danh mục tối đa lợi nhuận và giảm thiểu rủi ro.
 
 ### Automatically generating an instance of `DataLoad`
 `DataLoad()` là một hàm đầu vào là *symbols* *start*  *end* sẽ trả về kết quả một dataframe giá cổ phiếu trong khoảng thời gian đầu vào .
 ```
 import markowitzvn.data as dt
-names=['STB', 'CMG', 'VGC', 'VHC', 'FPT']
+symbols_list=['CTG', 'MBB', 'FMC', 'CMG', 'FPT']
 start_date = '2019-11-15'
 end_date = '2022-11-15'
 loader=dt.DataLoad(symbols=symbols_list, start=start_date, end=end_date)
@@ -28,24 +28,24 @@ price_stock=loader.download()
 ```
 Results
 ```
-              STB      CMG      VGC      VHC      FPT
-TradingDate
-2019-11-18   10600.0  24944.0  15989.0  35666.0  33409.0
-2019-11-19   10600.0  24944.0  15904.0  35620.0  33874.0
-2019-11-20   10400.0  24588.0  15861.0  35440.0  33003.0
-2019-11-21   10200.0  24717.0  15904.0  35440.0  32538.0
-2019-11-22   10250.0  24588.0  15818.0  34988.0  32538.0
+              CTG      MBB      FMC      CMG      FPT
+TradingDate                                             
+2019-11-18   15956.0  12130.0  21608.0  24944.0  33409.0
+2019-11-19   16031.0  12211.0  21688.0  24944.0  33874.0
+2019-11-20   15882.0  12130.0  21688.0  24588.0  33003.0
+2019-11-21   15882.0  12023.0  21688.0  24717.0  32538.0
+2019-11-22   15733.0  11996.0  21489.0  24588.0  32538.0
 ...              ...      ...      ...      ...      ...
-2022-11-09   16250.0  35400.0  35300.0  74900.0  74000.0
-2022-11-10   15150.0  33950.0  32850.0  74900.0  73000.0
-2022-11-11   15600.0  35000.0  30600.0  75500.0  72800.0
-2022-11-14   15850.0  35000.0  28500.0  74500.0  70800.0
-2022-11-15   15100.0  32550.0  26550.0  74900.0  65900.0
+2022-11-09   24450.0  16950.0  35000.0  35400.0  74000.0
+2022-11-10   22750.0  15800.0  34350.0  33950.0  73000.0
+2022-11-11   23600.0  16000.0  34700.0  35000.0  72800.0
+2022-11-14   23900.0  15200.0  33000.0  35000.0  70800.0
+2022-11-15   23400.0  14150.0  30700.0  32550.0  65900.0
 ```
 Nếu đầu vào của bạn là một cổ phiếu
 ```
 import markowitzvn.data as dt
-symbols_list=['STB', 'CMG', 'VGC', 'VHC', 'FPT']
+symbols_list='FPT'
 
 start_date = '2019-11-15'
 end_date = '2022-11-15'
@@ -56,8 +56,8 @@ price_stock=loader.download()
 Results
 
 ```
-              Open     High      Low    Close   Volume
-TradingDate
+                Open     High      Low    Close   Volume
+TradingDate                                             
 2019-11-18   33932.0  34165.0  33177.0  33409.0  2794920
 2019-11-19   33409.0  33874.0  33409.0  33874.0  1059770
 2019-11-20   33816.0  33816.0  32886.0  33003.0  2291760
@@ -71,9 +71,10 @@ TradingDate
 2022-11-15   70000.0  70000.0  65900.0  65900.0  3123365
 ```
 ### Line plot
-trực quan giá cổ phiếu bằng các đường
+trực quan giá cổ phiếu bằng biểu đồ đường.
+Nếu bạn muốn so sánh giá cổ phiếu với nhau có một tham số *permanent=True* nó sẽ cố định một điểm bắt đầu là 100.
 ```
-loader.lineplot(permanent=False)
+loader.lineplot()
   """this is a vizual pirce close
 
         Args:
@@ -82,7 +83,7 @@ loader.lineplot(permanent=False)
 ```
 yields
 <p align="center">
-  <img src="images\lineplot.png" width="60%">
+  <img src="images\lineplot.png" width="90%">
 </p>
 
 ### Portfolio properties
@@ -130,7 +131,7 @@ Annualised Volatility: Biến động
 allocation: tỷ trọng các cổ phiếu
 
 <p align="center">
-  <img src="images\profolios.png" width="60%">
+  <img src="images\profolios.png" width="90%">
 </p>
 ## Installation
 As it is common for open-source projects, there are several ways to get hold of the code. Choose whichever suits you and your purposes best.

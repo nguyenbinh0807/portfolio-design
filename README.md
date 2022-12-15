@@ -28,7 +28,7 @@ price_stock=loader.download()
 ```
 Results
 ```
- 			           STB      CMG      VGC      VHC      FPT
+              STB      CMG      VGC      VHC      FPT
 TradingDate
 2019-11-18   10600.0  24944.0  15989.0  35666.0  33409.0
 2019-11-19   10600.0  24944.0  15904.0  35620.0  33874.0
@@ -55,7 +55,7 @@ price_stock=loader.download()
 Results
 
 ```
- 			           Open     High      Low    Close   Volume
+              Open     High      Low    Close   Volume
 TradingDate
 2019-11-18   33932.0  34165.0  33177.0  33409.0  2794920
 2019-11-19   33409.0  33874.0  33409.0  33874.0  1059770

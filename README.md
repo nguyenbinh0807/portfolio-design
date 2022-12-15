@@ -81,7 +81,7 @@ loader.lineplot(permanent=False)
 ```
 yields
 <p align="center">
-  <img src="markowitzvn\images\lineplot.png" width="60%">
+  <img src="images\lineplot.png" width="60%">
 </p>
 
 ### Portfolio properties
@@ -129,7 +129,7 @@ Annualised Volatility: Biến động
 allocation: tỷ trọng các cổ phiếu
 
 <p align="center">
-  <img src="markowitzvn\images\profolios.png" width="60%">
+  <img src="images\profolios.png" width="60%">
 </p>
 ## Installation
 As it is common for open-source projects, there are several ways to get hold of the code. Choose whichever suits you and your purposes best.
@@ -152,11 +152,11 @@ As it is common for open-source projects, there are several ways to get hold of 
 Hiện tại tôi đang học ngành kinh tế năm 3 tại đại học mở và tự học thêm kỹ năng lập trình để có thể áp dụng vào lĩnh vực kinh tế. Đây là thư viện đầu tiên tôi viết và nếu muốn ủng hộ các thư viện trong việc phân tích thị trường chứng khoán thì qua ngân hàng agribank. Cảm ơn mọi người rất nhiều.
 
 <p align="center">
-  <img src="markowitzvn\images\37d24aebd151080f5140.jpg" width="60%">
+  <img src="images\37d24aebd151080f5140.jpg" width="60%">
 </p>
 
+Nếu ai muốn cùng tôi phát triển các dự án sau này và cùng nhau học hỏi kinh nghiệm. Mọi người có thể liên hệ tôi qua FaceBook. Cảm ơn mọi người
 <div id="badges" align="center">
-Nếu ai muốn cùng tôi phát triển các dự án sau này và cùng nhau học hỏi kinh nghiệm. Mọi người có thể liên hệ tôi qua FaceBook. Cảm ơn mọi người 
   <a href="https://www.facebook.com/binh.nguyenthe.5815255/">
     <img src="https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white" alt="Messenger Badge"/>
   </a>

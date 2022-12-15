@@ -83,7 +83,7 @@ loader.lineplot()
 ```
 yields
 <p align="center">
-  <img src="images\lineplot.png" width="90%">
+  <img src="images/Screenshot 2022-12-15 140013.png" width="90%">
 </p>
 
 ### Portfolio properties

@@ -45,7 +45,8 @@ TradingDate
 Nếu đầu vào của bạn là một cổ phiếu
 ```
 import markowitzvn.data as dt
-names=['STB', 'CMG', 'VGC', 'VHC', 'FPT']
+symbols_list=['STB', 'CMG', 'VGC', 'VHC', 'FPT']
+
 start_date = '2019-11-15'
 end_date = '2022-11-15'
 loader=dt.DataLoad(symbols=symbols_list, start=start_date, end=end_date)

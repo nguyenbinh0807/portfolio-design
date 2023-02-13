@@ -1,0 +1,6 @@
+pandas>=0.19.2
+numpy>=1.20.2
+plotly>=4.2.1
+scipy>=1.2.0
+vnstock
+requests

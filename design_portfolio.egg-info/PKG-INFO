@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: design-portfolio
+Version: 0.0.3
+Summary: Viet Nam stock profile
+Home-page: https://github.com/nguyenbinh0807/profilevn.git
+Author: nguyenthebinh
+Author-email: 2054022009binh@ou.edu.vn
+License: MIT
+Keywords: markowitzvn,python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # design_portfolio
 *design_portfolio* is a program for financial **portfolio management, analysis and optimisation**.
 

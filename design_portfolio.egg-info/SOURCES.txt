@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+design_portfolio/data.py
+design_portfolio.egg-info/PKG-INFO
+design_portfolio.egg-info/SOURCES.txt
+design_portfolio.egg-info/dependency_links.txt
+design_portfolio.egg-info/requires.txt
+design_portfolio.egg-info/top_level.txt
+design_portfolio/portfolios/__init__.py
+design_portfolio/portfolios/porfolios2.py
+design_portfolio/portfolios/porfolios3.py
+design_portfolio/portfolios/portfolios1.py

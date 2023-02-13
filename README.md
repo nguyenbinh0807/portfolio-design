@@ -154,6 +154,7 @@ As it is common for open-source projects, there are several ways to get hold of 
 *design_portfolio* can be obtained from PyPI
 
 ```pip install design_portfolio```
+link: https://pypi.org/project/design-portfolio/
 
 # III. 🙋‍♂️ Contact Information
 Hiện tại tôi đang học ngành kinh tế năm 3 tại đại học mở và tự học thêm kỹ năng lập trình để có thể áp dụng vào lĩnh vực kinh tế. Đây là thư viện đầu tiên tôi viết và nếu muốn ủng hộ các thư viện trong việc phân tích thị trường chứng khoán thì qua ngân hàng agribank. Cảm ơn mọi người rất nhiều.

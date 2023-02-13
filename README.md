@@ -12,6 +12,7 @@
 *design_portfolio* có thể tạo một đối tượng giữ giá cổ phiếu của danh mục đầu tư tài chính bạn mong muốn, phân tích nó và có thể tạo các biểu đồ gồm các loại *Returns*, *Moving Averages*, *Line Plot*. Nó cũng cho phép tối ưu hóa dựa trên *Efficient Frontier* hoặc danh mục đầu tư tài chính chạy *Monte Carlo* trong một vài dòng mã. Một số kết quả được hiển thị ở đây.
 Dựa trên lý thuyết tối đa hóa danh mục đầu tư của markowitz và những yêu cầu để phù hợp với thị trường Việt Nam nên tôi đã đưa mô hình về với Việt Nam giúp cho nhà đầu tư trong việc phân tích và phân bổ danh mục tối đa lợi nhuận và giảm thiểu rủi ro
 
+Bản update lần này sẽ giúp cho nhà đầu tư sẽ đa dạng hóa danh mục ở thị trường Việt Nam. Nếu trong danh mục có một cổ phiếu nào tỷ trọng lớn hơn 30 tôi sẽ đưa nó về 30 và chạy lần nữa nếu không thì vẫn trả về bình thường (phần thuật toán đó tôi viết trong porfolios3.py)
 ### Automatically generating an instance of `DataLoad`
 `DataLoad()` là một hàm đầu vào là *symbols* *start*  *end* sẽ trả về kết quả một dataframe giá cổ phiếu trong khoảng thời gian đầu vào .
 ```
@@ -154,6 +155,7 @@ As it is common for open-source projects, there are several ways to get hold of 
 *design_portfolio* can be obtained from PyPI
 
 ```pip install design_portfolio```
+
 link: https://pypi.org/project/design-portfolio/
 
 # III. 🙋‍♂️ Contact Information
